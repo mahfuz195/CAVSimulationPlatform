@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 894206f57c3b93b65f40e0e318e2c7a1
+containsDevices: 1
+baseType: Robot
+slotType: 
+parameters: translation,rotation,color,specularColor,engineSound,name,controller,controllerArgs,synchronization,rearMirror,leftWingMirror,rightWingMirror,windshieldWipers,mirrorFar,sensorsSlotFront,sensorsSlotRear,sensorsSlotTop,sensorsSlotCenter,frontSpotLights,interior,completeInterior,steeringWheel,outerWindowTransparency,innerWindowTransparency
+tags: static
+info: Model\sof\san\sBMW\sX5\scar\susing\sthe\sCar\sproto\sas\sa\sbase.\nThe\svehicle\sis\smodelled\swith\srealistic\sphysics\sproperties:\smotor\storques,\sbody\smass,\sfriction\sforces,\ssuspensions,\setc.\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

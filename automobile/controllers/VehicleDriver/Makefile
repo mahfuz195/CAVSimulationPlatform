@@ -1,0 +1,14 @@
+# Webots Makefile system for Java controllers
+#
+# You may add some variable definitions hereafter to customize the build process
+# See documentation in $(WEBOTS_HOME_PATH)/resources/Makefile.java.include
+
+
+# Do not modify the following: this includes Webots global Makefile.java.include
+space :=
+space +=
+WEBOTS_HOME_PATH=$(subst $(space),\ ,$(strip $(subst \,/,$(WEBOTS_HOME))))
+
+CLASSPATH = $(WEBOTS_HOME)/projects/automobile/libraries/java/automobile.jar
+
+include $(WEBOTS_HOME_PATH)/resources/Makefile.java.include

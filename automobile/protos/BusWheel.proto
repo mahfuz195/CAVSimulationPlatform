@@ -1,0 +1,34 @@
+#VRML_SIM V8.6 utf8
+# Model of a bus wheel using the generic AutomobileWheel proto
+# including physic properties and textures
+# Sponsored by the CTI project RO2IVSim (http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)
+
+PROTO BusWheel [
+  field SFNode physics        NULL
+  field SFBool boundingObject TRUE
+]
+{
+  AutomobileWheel {
+    thickness 0.28
+    tireRadius 0.56
+    subdivision 36
+    edgeSubdivision 3
+    rimRadius 0.34
+    rimBeamNumber 7
+    rimBeamWidth 0.12
+    centralInnerRadius 0.1
+    centralOuterRadius 0.17
+    contactMaterial "BusWheels"
+    tireAppearance Appearance {
+      material Material {
+      }
+      texture ImageTexture {
+        url [
+          "textures/tire_texture.jpg"
+        ]
+      }
+    }
+    physics IS physics
+    boundingObject IS boundingObject
+  }
+}

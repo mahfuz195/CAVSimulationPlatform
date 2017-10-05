@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 114ef73082d71fbf2843bad59deab05b
+containsDevices: 0
+baseType: Group
+slotType: 
+parameters: color
+tags: hidden
+info: based\son\sthe\sblender\smodel\sof\sSONGKRO\s(http://www.blendswap.com/blends/view/46384)\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

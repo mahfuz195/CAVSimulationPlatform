@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 7839a7d19b016861540b49e3ee8c9148
+containsDevices: 0
+baseType: Solid
+slotType: 
+parameters: translation,rotation,color,specularColor,recognitionColors,name,wheelBoundingObject,frontRightWheelAngularVelocity,frontLeftWheelAngularVelocity,rearRightWheelAngularVelocity,rearLeftWheelAngularVelocity
+tags: 
+info: Simple\snon-controllable\smodel\sof\sthe\sBMW\sX5\swithout\sphysics\sproperties\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

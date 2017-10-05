@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 710e7748892b4a6a7e25d306e11f3581
+containsDevices: 1
+baseType: Group
+slotType: 
+parameters: front,frontColor,rightIndicator,leftIndicator,indicatorColor,antifog,antifogColor,braking,brakingColor,rear,rearColor,backwards,backwardsColor
+tags: 
+info: Set\sof\slights\sfound\sin\sa\sstandard\sautomobile:\sfront,\sright\sand\sleft\sindicators,\santifog,\sbraking,\srear\sand\sbackwards\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

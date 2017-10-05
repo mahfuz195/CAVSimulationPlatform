@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: d60bcf3e430e2801e19c53bb21d94755
+containsDevices: 0
+baseType: Solid
+slotType: 
+parameters: translation,rotation,color,recognitionColors,name,wheelBoundingObject,frontRightWheelAngularVelocity,frontLeftWheelAngularVelocity,rearRightWheelAngularVelocity,rearLeftWheelAngularVelocity
+tags: 
+info: A\ssimple\snon-controllable\sbus\smodel\swithout\sphysics\sproperties\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

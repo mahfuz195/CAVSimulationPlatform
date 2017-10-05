@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: ed5406ceb7824700eb58bd096a48c13d
+containsDevices: 0
+baseType: Slot
+slotType: automobile\swheel
+parameters: physics,boundingObject
+tags: 
+info: Model\sof\sthe\sToyota\sPrius\swheels\susing\sthe\sgeneric\sAutomobileWheel\sproto\nincluding\sphysic\sproperties\sand\stextures\nThe\scontactMaterial\sis\s"ToyotaPriusWheels"\nSize:\s195/65\sR15\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

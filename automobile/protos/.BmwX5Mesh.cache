@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 7261118066c5493c369e42475c3feee4
+containsDevices: 0
+baseType: Group
+slotType: 
+parameters: color,specularColor,outerWindowTransparency
+tags: hidden
+info: 

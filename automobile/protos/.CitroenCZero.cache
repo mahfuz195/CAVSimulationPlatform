@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 80781f4d1743defc30dc0de95c7806c8
+containsDevices: 0
+baseType: Robot
+slotType: 
+parameters: translation,rotation,color,plate,engineSound,name,controller,controllerArgs,synchronization,sensorsSlotFront,sensorsSlotRear,sensorsSlotTop,sensorsSlotCenter,frontSpotLights
+tags: static
+info: Model\sof\sa\sCitroën\sC-Zero\scar\susing\sthe\sCar\sproto\sas\sa\sbase.\nThe\svehicle\sis\smodelled\swith\srealistic\sphysics\sproperties:\smotor\storques,\sbody\smass,\sfriction\sforces,\ssuspensions,\setc.\nThe\scontactMaterial\sof\sthe\swheels\sis\s"CitroenCZeroWheels"\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 36aad84d2154110e047aac65edc2729c
+containsDevices: 0
+baseType: Robot
+slotType: 
+parameters: translation,rotation,color,secondaryColor,plate,engineSound,name,controller,controllerArgs,synchronization,sensorsSlotFront,sensorsSlotRear,sensorsSlotTop,sensorsSlotCenter,frontSpotLights
+tags: static
+info: Model\sof\sa\sRange\sRover\sSport\sSVR\s2015\n

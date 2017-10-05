@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 6a7f7f875e9e9157e7e3bb6683d3892c
+containsDevices: 0
+baseType: Supervisor
+slotType: 
+parameters: gui,useNetconvert,enableTrafficLights,enableWheelsRoattion,maxVehicules,radius,enableHeight,step,port,seed,networkFiles,controller,sumoArguments,display,verbose,synchronization,children
+tags: static
+info: Supervisor\sinterfacing\sSUMO\swith\sWebots\n

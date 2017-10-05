@@ -1,0 +1,116 @@
+#VRML_SIM V8.6 utf8
+# A simple non-controllable bus model without physics properties
+# Sponsored by the CTI project RO2IVSim (http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)
+
+PROTO BusSimple [
+  field     SFVec3f    translation         0 0.55 0
+  field     SFRotation rotation            0 1 0 0
+  vrmlField SFColor    color               0.03 0.12 0.42
+  field     MFColor    recognitionColors   [  0.03 0.12 0.42 ]
+  field     SFString   name                "vehicle"
+  field     SFBool     wheelBoundingObject FALSE
+  hiddenField SFVec3f frontRightWheelAngularVelocity 0 0 0
+  hiddenField SFVec3f frontLeftWheelAngularVelocity  0 0 0
+  hiddenField SFVec3f rearRightWheelAngularVelocity  0 0 0
+  hiddenField SFVec3f rearLeftWheelAngularVelocity   0 0 0
+]
+{
+Solid {
+  translation IS translation
+  rotation IS rotation
+  name IS name
+  model "bus"
+  recognitionColors IS recognitionColors # this is not good because of duplication but we need to avoid using lua
+  children [
+    BusShape {
+      color IS color
+    }
+    Transform {
+      translation -0.9 0.56 6.26
+      rotation 1 0 0 1.5708
+      children [
+        DEF FRONT_SPOT Shape {
+          appearance Appearance {
+            material Material {
+            }
+          }
+          geometry Cylinder {
+            height 0.056
+            radius 0.117
+            subdivision 24
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0.9 0.56 6.26
+      rotation 1 0 0 1.5708
+      children [
+        USE FRONT_SPOT
+      ]
+    }
+    DEF REAR_LEFT_WHEEL Solid {
+      angularVelocity IS rearLeftWheelAngularVelocity
+      translation 1.25 0 0
+      rotation 0 0 1 -1.5708
+      children [
+        Slot {
+          type "automobile wheel"
+          endPoint BusWheel {
+            boundingObject IS wheelBoundingObject
+          }
+        }
+      ]
+    }
+    DEF FRONT_LEFT_WHEEL Solid {
+      angularVelocity IS frontLeftWheelAngularVelocity
+      translation 1.25 0 4.5
+      rotation 0 0 1 -1.5708
+      children [
+        Slot {
+          type "automobile wheel"
+          endPoint BusWheel {
+            boundingObject IS wheelBoundingObject
+          }
+        }
+      ]
+    }
+    DEF REAR_RIGHT_WHEEL Solid {
+      angularVelocity IS rearRightWheelAngularVelocity
+      translation -1.25 0 0
+      rotation 0 0 1 1.5708
+      children [
+        Slot {
+          type "automobile wheel"
+          endPoint BusWheel {
+            boundingObject IS wheelBoundingObject
+          }
+        }
+      ]
+    }
+    DEF FRONT_RIGHT_WHEEL Solid {
+      angularVelocity IS frontRightWheelAngularVelocity
+      translation -1.25 0 4.5
+      rotation 0 0 1 1.5708
+      children [
+        Slot {
+          type "automobile wheel"
+          endPoint BusWheel {
+            boundingObject IS wheelBoundingObject
+          }
+        }
+      ]
+    }
+  ]
+  radarCrossSection 200
+  boundingObject Transform {
+    translation 0 1.35 1.4625
+    children [
+      Box {
+        size 2.64 2.9 9.73
+      }
+    ]
+  }
+  physics NULL
+}
+}

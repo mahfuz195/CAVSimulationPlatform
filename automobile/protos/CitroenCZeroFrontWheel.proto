@@ -1,0 +1,59 @@
+#VRML_SIM V8.6 utf8
+# Model of the Citroën C-Zero front wheels using the generic AutomobileWheel proto
+# including physic properties and textures
+# The contactMaterial is "CitroenCZeroWheels"
+# Size: 145/65/R15
+# Sponsored by the CTI project RO2IVSim (http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)
+
+PROTO CitroenCZeroFrontWheel [
+  field SFNode physics        NULL
+  field SFBool boundingObject TRUE
+]
+{
+  AutomobileWheel {
+    thickness 0.145
+    tireRadius 0.28475
+    curvatureFactor 0.5
+    edgeSubdivision 2
+    rimRadius 0.1905
+    rimBeamNumber 7
+    rimBeamWidth 0.07
+    centralInnerRadius 0.06
+    centralOuterRadius 0.11
+    rimBeamThickness 0.1
+    rimBeamOffset 0.022
+    contactMaterial "CitroenCZeroWheels"
+    tireAppearance Appearance {
+      material Material {
+      }
+      texture ImageTexture {
+        url [
+          "textures/tire_texture.jpg"
+        ]
+      }
+    }
+    physics IS physics
+    boundingObject IS boundingObject
+    logoSlot [
+      Shape {
+        appearance Appearance {
+          material Material {
+          }
+          texture ImageTexture {
+            url [
+              "textures/citroen_logo.png"
+            ]
+          }
+          textureTransform TextureTransform {
+          }
+        }
+        geometry Cylinder {
+          bottom FALSE
+          height 0.142
+          radius 0.05
+          side FALSE
+        }
+      }
+    ]
+  }
+}

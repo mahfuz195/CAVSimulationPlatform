@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: ed43f5bc1661002488efb819294e8f40
+containsDevices: 0
+baseType: Solid
+slotType: 
+parameters: translation,rotation,color,recognitionColors,plate,name,wheelBoundingObject,frontRightWheelAngularVelocity,frontLeftWheelAngularVelocity,rearRightWheelAngularVelocity,rearLeftWheelAngularVelocity
+tags: 
+info: Simple\snon-controllable\smodel\sof\sthe\sToyota\sPrius\swithout\sphysics\sproperties\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

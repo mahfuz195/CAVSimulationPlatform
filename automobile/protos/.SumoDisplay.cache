@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: f65b5f0f8ed0fccc95f772ba24c5e6df
+containsDevices: 1
+baseType: Slot
+slotType: sumo\sdisplay
+parameters: width,height,zoom,refreshRate,fitSize
+tags: static
+info: This\sPROTO\sis\smeant\sto\sbe\sinserted\sin\sthe\s'display'\nfield\sof\sthe\s'SumoInterface'\sPROTO\n

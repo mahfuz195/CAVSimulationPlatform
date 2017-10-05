@@ -1,0 +1,58 @@
+#VRML_SIM V8.6 utf8
+# Model of the BMW X5 wheels using the generic AutomobileWheel proto
+# including physic properties and textures
+# Sponsored by the CTI project RO2IVSim (http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)
+
+PROTO BmwX5Wheel [
+  field SFNode physics        NULL
+  field SFBool boundingObject TRUE
+]
+{
+  AutomobileWheel {
+    thickness 0.25
+    tireRadius 0.374
+    rimRadius 0.255
+    rimBeamWidth 0.07
+    centralInnerRadius 0.08
+    centralOuterRadius 0.12
+    rimBeamThickness 0.08
+    rimBeamOffset 0.065
+    tireAppearance Appearance {
+      material Material {
+      }
+      texture ImageTexture {
+        url [
+          "textures/tire_texture.jpg"
+        ]
+      }
+    }
+    rimAppearance Appearance {
+      material Material {
+        diffuseColor 0.7 0.7 0.7
+        specularColor 1 1 1
+      }
+    }
+    physics IS physics
+    boundingObject IS boundingObject
+    logoSlot [
+      Shape {
+        appearance Appearance {
+          material Material {
+          }
+          texture ImageTexture {
+            url [
+              "textures/bmw_logo.jpg"
+            ]
+          }
+        }
+        geometry Cylinder {
+          bottom FALSE
+          height 0.21
+          radius 0.036
+          side FALSE
+          subdivision 24
+        }
+      }
+    ]
+  }
+}

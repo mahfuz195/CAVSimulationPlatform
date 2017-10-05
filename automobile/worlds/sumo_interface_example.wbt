@@ -1,0 +1,147 @@
+#VRML_SIM V8.6 utf8
+WorldInfo {
+  ERP 0.6
+  basicTimeStep 20
+  lineScale 5
+  contactProperties [
+    ContactProperties {
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material2 "CitroenCZeroWheels"
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material2 "ToyotaPriusWheels"
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material2 "LincolnMKZWheels"
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material2 "RangeRoverSportSVRWheels"
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.088859938 -0.96741742 -0.2370811 2.43775
+  position -20.420878 13.829094 -23.074194
+  near 0.5
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DirectionalLight {
+  direction -0.5 -0.9 -0.5
+  intensity 0.6
+}
+Fog {
+  color 0.93 0.96 1
+  visibilityRange 700
+}
+SumoInterface {
+  enableWheelsRoattion TRUE
+  children [
+    DEF TRAFFIC_LIGHT_NORTH Pole {
+      translation 3.9 0 3.9
+      rotation 0 1 0 6.28319
+      slot [
+        DEF TLS_0_0 TrafficLight {
+          rotation 0 1 0 3.14159
+          red_light "0_0_r"
+          orange_light "0_0_y"
+          green_light "0_0_g"
+          lamp_geometry TrafficLightStandardLampGeometry {
+          }
+        }
+      ]
+    }
+    DEF TRAFFIC_LIGHT_RIGHT Pole {
+      translation -3.9 0 3.9
+      rotation 0 -1 0 1.57079
+      slot [
+        DEF TLS_0_1 TrafficLight {
+          rotation 0 1 0 3.14159
+          red_light "0_1_r"
+          orange_light "0_1_y"
+          green_light "0_1_g"
+          lamp_geometry TrafficLightStandardLampGeometry {
+          }
+        }
+      ]
+    }
+    DEF TRAFFIC_LIGHT_SOUTH Pole {
+      translation -3.9 0 -3.9
+      rotation 0 -1 0 6.28318
+      slot [
+        DEF TLS_0_2 TrafficLight {
+          red_light "0_2_r"
+          orange_light "0_2_y"
+          green_light "0_2_g"
+          lamp_geometry TrafficLightStandardLampGeometry {
+          }
+        }
+      ]
+    }
+    DEF TRAFFIC_LIGHT_LEFT Pole {
+      translation 3.9 0 -3.9
+      rotation 0 1 0 5.49778
+      slot [
+        DEF TLS_0_3 TrafficLight {
+          rotation 0 1 0 5.49779
+          red_light "0_3_r"
+          orange_light "0_3_y"
+          green_light "0_3_g"
+          lamp_geometry TrafficLightStandardLampGeometry {
+          }
+        }
+      ]
+    }
+  ]
+}
+RoadIntersection {
+  rotation 0 1 0 0.7854
+  roadsWith 8
+  startRoadsLength 500
+}
+Floor {
+  translation 0 -0.01 0
+  size 1000 1000
+  tileSize 2 2
+  texture [
+    "textures/grass.jpg"
+  ]
+}

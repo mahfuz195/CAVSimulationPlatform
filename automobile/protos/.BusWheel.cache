@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 75fc0655c9ce76bf375079c3995eae74
+containsDevices: 0
+baseType: Slot
+slotType: automobile\swheel
+parameters: physics,boundingObject
+tags: 
+info: Model\sof\sa\sbus\swheel\susing\sthe\sgeneric\sAutomobileWheel\sproto\nincluding\sphysic\sproperties\sand\stextures\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

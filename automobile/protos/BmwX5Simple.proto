@@ -1,0 +1,116 @@
+#VRML_SIM V8.6 utf8
+# Simple non-controllable model of the BMW X5 without physics properties
+# Sponsored by the CTI project RO2IVSim (http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)
+
+PROTO BmwX5Simple [
+  field       SFVec3f    translation         0 0.4 0
+  field       SFRotation rotation            0 1 0 0
+  vrmlField   SFColor    color               0.43 0.11 0.1
+  vrmlField   SFColor    specularColor       0.61 0.7 0.78
+  field       MFColor    recognitionColors   [ 0.43 0.11 0.1 ]
+  field       SFString   name                "vehicle"
+  field       SFBool     wheelBoundingObject FALSE
+  hiddenField SFVec3f frontRightWheelAngularVelocity 0 0 0
+  hiddenField SFVec3f frontLeftWheelAngularVelocity  0 0 0
+  hiddenField SFVec3f rearRightWheelAngularVelocity  0 0 0
+  hiddenField SFVec3f rearLeftWheelAngularVelocity   0 0 0
+]
+{
+  Solid {
+    translation IS translation
+    rotation IS rotation
+    recognitionColors IS recognitionColors # this is not good because of duplication but we need to avoid using lua
+    children [
+      BmwX5FrontLight {
+      }
+      BmwX5RightIndicator {
+      }
+      BmwX5LeftIndicator {
+      }
+      BmwX5AntiFogLight {
+      }
+      BmwX5RearLight {
+      }
+      BmwX5BrakingLight {
+      }
+      BmwX5BackwardsLight {
+      }
+      BmwX5RightWiper {
+      }
+      BmwX5LeftWiper {
+      }
+      BmwX5Mesh {
+        color IS color
+        specularColor IS specularColor
+      }
+      BmwX5RightWingMirror {
+      }
+      BmwX5LeftWingMirror {
+      }
+      DEF FRONT_RIGHT_WHEEL Solid {
+        angularVelocity IS frontRightWheelAngularVelocity
+        translation -0.814 0 2.995
+        rotation 0 0 1 1.5708
+        children [
+          Slot {
+            type "automobile wheel"
+            endPoint BmwX5Wheel {
+              boundingObject IS wheelBoundingObject
+            }
+          }
+        ]
+      }
+      DEF FRONT_LEFT_WHEEL Solid {
+        angularVelocity IS frontLeftWheelAngularVelocity
+        translation 0.814 0 2.995
+        rotation 0 0 1 -1.5708
+        children [
+          Slot {
+            type "automobile wheel"
+            endPoint BmwX5Wheel {
+              boundingObject IS wheelBoundingObject
+            }
+          }
+        ]
+      }
+      DEF REAR_RIGHT_WHEEL Solid {
+        angularVelocity IS rearRightWheelAngularVelocity
+        translation -0.814 0 0
+        rotation 0 0 1 1.5708
+        children [
+          Slot {
+            type "automobile wheel"
+            endPoint BmwX5Wheel {
+              boundingObject IS wheelBoundingObject
+            }
+          }
+        ]
+      }
+      DEF REAR_LEFT_WHEEL Solid {
+        angularVelocity IS rearLeftWheelAngularVelocity
+        translation 0.814 0 0
+        rotation 0 0 1 -1.5708
+        children [
+          Slot {
+            type "automobile wheel"
+            endPoint BmwX5Wheel {
+              boundingObject IS wheelBoundingObject
+            }
+          }
+        ]
+      }
+    ]
+    name IS name
+    model "BMW X5"
+    radarCrossSection 100
+    boundingObject Transform {
+      translation 0 0.7 1.35
+      children [
+        Box {
+          size 1.8 1.6 4.5
+        }
+      ]
+    }
+    physics NULL
+  }
+}

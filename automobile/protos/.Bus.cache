@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 223a01ed70606568d86ec8969cb0033a
+containsDevices: 0
+baseType: Robot
+slotType: 
+parameters: translation,rotation,color,name,controller,controllerArgs,synchronization,sensorsSlotFront,sensorsSlotRear,sensorsSlotTop,sensorsSlotCenter
+tags: static
+info: A\ssimple\sbus.\nSponsored\sby\sthe\sCTI\sproject\sRO2IVSim\s(http://transport.epfl.ch/simulator-for-mobile-robots-and-intelligent-vehicles)\n

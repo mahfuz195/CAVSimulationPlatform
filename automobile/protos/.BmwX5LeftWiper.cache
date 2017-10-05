@@ -1,0 +1,8 @@
+Webots Proto Cache File version 1.3
+protoFileHash: 894671d9352f7fb59ee2a44c13291551
+containsDevices: 0
+baseType: Shape
+slotType: 
+parameters: castShadows
+tags: hidden
+info: 
