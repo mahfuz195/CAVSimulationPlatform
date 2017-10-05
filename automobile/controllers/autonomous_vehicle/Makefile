@@ -18,8 +18,8 @@ endif
 INCLUDE = -I"$(WEBOTS_AUTOMOBILE_PATH)/driver/include"
 LIBRARIES = -L"$(WEBOTS_AUTOMOBILE_PATH)/driver" -ldriver -L"$(WEBOTS_AUTOMOBILE_PATH)/car" -lcar
 
-INCLUDE = -I"C:/opencv/opencv/build/include"
-LIBRARIES = -L"C:/opencv/opencv/build/x64/vc14/lib" -lopencv
+##INCLUDE = -I"C:/opencv/opencv/build/include"
+##LIBRARIES = -L"C:/opencv/opencv/build/x64/vc14/lib" -lopencv
 
 
 
